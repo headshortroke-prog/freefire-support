@@ -1,1 +1,1 @@
-# freefire-support
+# freefire-support/settings/pages
