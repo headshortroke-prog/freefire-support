@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garena Free Fire - Customer Care Support</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #0b0f19;
+      color: #e6e9ef;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #ff4d4d, #ff8a8a);
+      color: #fff;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #111827;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      border-left: 4px solid #ff4d4d;
+      padding-left: 10px;
+    }
+    p {
+      color: #aab2c0;
+      line-height: 1.6;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      color: #c0c8d6;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #1b2433;
+      color: #fff;
+      font-size: 14px;
+    }
+    button {
+      background: linear-gradient(90deg, #ff4d4d, #ff8a8a);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: 40px;
+    }
+    .note {
+      background: rgba(255, 77, 77, 0.1);
+      border: 1px solid rgba(255, 77, 77, 0.3);
+      border-left: 4px solid #ff4d4d;
+      padding: 12px;
+      border-radius: 6px;
+      color: #f3f4f6;
+    }
+    @media (max-width: 768px) {
+      .container { margin: 20px; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Garena Free Fire - Customer Care</h1>
+    <div style="font-size:13px">support.garena.com</div>
+  </header>
+
+  <div class="container">
+    <h2>Contact Free Fire Support</h2>
+    <p>Welcome to the official Garena Free Fire Support Center. Our dedicated team is here to help you resolve your issues regarding accounts, login, purchases, or technical difficulties.</p>
+    <p>Please complete the form below with accurate information. Our team will verify your details and respond to your query within <strong>3–5 working days</strong>.</p>
+
+    <form id="supportForm">
+      <div class="form-group">
+        <label>Player ID *</label>
+        <input type="text" id="playerId" required />
+      </div>
+
+      <div class="form-group">
+        <label>In-game Name *</label>
+        <input type="text" id="ign" required />
+      </div>
+
+      <div class="form-group">
+        <label>Registered Email or Phone Number *</label>
+        <input type="text" id="contact" required />
+      </div>
+
+      <div class="form-group">
+        <label>Login Method *</label>
+        <select id="login">
+          <option>Facebook</option>
+          <option>Google</option>
+          <option>VK</option>
+          <option>Guest</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Issue Category *</label>
+        <select id="issueType">
+          <option>Account hacked or suspended</option>
+          <option>Login failed</option>
+          <option>Lost access to old account</option>
+          <option>Diamond purchase issue</option>
+          <option>Bug or technical problem</option>
+          <option>Event reward not received</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Describe Your Issue *</label>
+        <textarea id="description" rows="5" placeholder="Provide complete details about your issue..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Attach Screenshot (optional)</label>
+        <input type="file" id="screenshot" accept="image/*" />
+      </div>
+
+      <button type="submit">Submit Ticket</button>
+    </form>
+
+    <div class="note" style="margin-top:20px;">
+      <strong>Important:</strong><br>
+      • Never share your password or OTP with anyone, including Garena staff.<br>
+      • All official responses come only from <strong>@garena.com</strong> domain.<br>
+      • Using unofficial websites or top-up platforms may result in permanent account ban.<br>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Garena International | All rights reserved.<br>
+    This website is a demo template inspired by the official Garena Support.
+  </footer>
+
+  <script>
+    const form = document.getElementById('supportForm');
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      const ticketId = 'FF-' + Math.floor(100000 + Math.random() * 900000);
+      alert('✅ Your support ticket has been created successfully!\\nTicket ID: ' + ticketId + '\\nOur team will review your case within 3–5 working days.');
+      form.reset();
+    };
+  </script>
+</body>
+</html>
